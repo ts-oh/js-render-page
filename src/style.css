@@ -1,0 +1,173 @@
+* {
+  font-family: 'Comic Shanns';
+  box-sizing: border-box;
+  font-size: 100%;
+  padding: 0;
+  margin: 0 0;
+}
+
+section {
+  padding: 25px;
+  min-height: auto;
+  background: whitesmoke;
+}
+
+header,
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: max-content;
+  width: 100%;
+  padding: 10px;
+  background-color: aquamarine;
+}
+
+.copyright-info {
+  margin-top: 2em;
+  font-size: 1rem;
+}
+
+.github-link {
+  margin-top: 0.5em;
+  margin-bottom: 2em;
+  font-size: 1em;
+  text-decoration: none;
+  color: black;
+}
+
+.github-link:hover {
+  text-decoration: wavy underline;
+  text-underline-offset: 0.25em;
+  text-decoration-color: magenta;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5em;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 10px;
+}
+
+nav a {
+  font-size: 1.5rem;
+  padding: 10px 10px;
+  margin: 0 1em;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
+
+li a.active {
+  text-decoration: wavy underline;
+  text-decoration-color: magenta;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 0.25em;
+}
+
+nav a:hover {
+  text-decoration: wavy underline;
+  text-decoration-color: magenta;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 0.25em;
+}
+
+.content-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  align-self: center;
+  font-size: 2rem;
+  margin: 1em 0;
+}
+
+p {
+  font-size: 1.25rem;
+  align-self: flex-start;
+}
+
+.content-box a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: rgb(255, 0, 179);
+  animation: animate 1s ease infinite;
+  margin: 1.5em 0;
+  align-self: center;
+}
+
+@keyframes animate {
+  50% {
+    opacity: 0;
+  }
+}
+
+.content-box a:hover {
+  text-decoration: wavy underline;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 0.25em;
+  color: magenta;
+  animation: none;
+}
+
+img {
+  margin-top: 3em;
+  margin-bottom: 0.25em;
+  border: 4px solid aqua;
+}
+
+.content-box figcaption {
+  align-self: center;
+}
+
+#map {
+  margin: 2em 2em;
+  height: 400px;
+  width: 100%;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-box > img {
+  margin-bottom: 3em;
+}
+
+@media (max-width: 767px) {
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-list li {
+    margin: 10px 0;
+  }
+
+  img {
+    width: 100%;
+    max-width: 484px;
+    height: auto;
+  }
+
+  h1 {
+    text-align: center;
+  }
+}
