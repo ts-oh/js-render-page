@@ -1,3 +1,5 @@
+import Harambe from './img/harambe.gif';
+
 function homeContent() {
   const contentContainer = document.createElement('div');
   contentContainer.setAttribute('class', 'content-box');
@@ -14,7 +16,7 @@ function homeContent() {
   externalLink.setAttribute('href', 'http://motherfuckingwebsite.com/');
 
   const harambeImage = document.createElement('img');
-  harambeImage.setAttribute('src', '/src/img/harambe.gif');
+  harambeImage.setAttribute('src', Harambe);
   harambeImage.setAttribute('alt', 'Harambe the Gorilla');
 
   const harambeCaption = document.createElement('figcaption');

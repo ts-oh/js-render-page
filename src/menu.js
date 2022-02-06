@@ -1,3 +1,5 @@
+import Protein from './img/protein.gif';
+
 function drawMenu() {
   const menuBox = document.createElement('div');
   menuBox.setAttribute('class', 'menu-box');
@@ -14,7 +16,7 @@ function drawMenu() {
     'Proteyyn Bar 🍫: Chocolate Mint flavored protein bar - $5.00';
 
   const menuPhoto = document.createElement('img');
-  menuPhoto.setAttribute('src', '/src/img/protein.gif');
+  menuPhoto.setAttribute('src', Protein);
   menuPhoto.setAttribute('alt', 'picture of protein kangaroo from agretsuko');
 
   menuBox.appendChild(menuHeading);
