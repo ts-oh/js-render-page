@@ -118,7 +118,15 @@ function eventDelegation() {
   }
 }
 
+function drawDivContent() {
+  const contentDiv = document.createElement('div');
+  contentDiv.setAttribute('id', 'content');
+  document.body.append(contentDiv);
+  return contentDiv;
+}
+
 function drawMain() {
+  drawDivContent();
   const content = document.querySelector('#content');
 
   content.appendChild(drawHeader());
