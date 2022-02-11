@@ -6,7 +6,7 @@ function drawContact() {
   contactHeading.textContent = 'Contact Info 🎤';
 
   contactBox.appendChild(contactHeading);
-  contactBox.appendChild(createText('Email 📮: feelfreeto@shitonme.com'));
+  contactBox.appendChild(createText('Email 📮: swe@qwertyasdf.com'));
   contactBox.appendChild(createText('Phone Number 📞: +01-123-2021-2022'));
   contactBox.appendChild(
     createText('Address 🧭: Virunga National Park, Bulambo, Congo-Kinshasa')
